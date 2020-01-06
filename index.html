@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,19 +8,23 @@
   <title>Main</title>
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
   <style>
-    a { margin: 10px;}
+    a {
+      margin: 10px;
+    }
   </style>
 </head>
+
 <body>
   <h1>home</h1>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro quam nemo natus accusamus doloremque impedit, est voluptates quidem ipsum, libero atque maiores explicabo aperiam laboriosam assumenda at itaque. Dolorem, atque.</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro quam nemo natus accusamus doloremque impedit, est
+    voluptates quidem ipsum, libero atque maiores explicabo aperiam laboriosam assumenda at itaque. Dolorem, atque.</p>
 
   <a href="#" onclick="setChildValue(0);return false;">sub-page</a>
   <a href="#" onclick="setChildValue(1);return false;">sub-page</a>
   <a href="#" onclick="setChildValue(2);return false;">sub-page</a>
   <hr>
   <a href="javascript:void chatChannel()">
-    <img src="https://developers.kakao.com/assets/img/about/logos/channel/consult_small_yellow_pc.png"/>
+    <img src="https://developers.kakao.com/assets/img/about/logos/channel/consult_small_yellow_pc.png" />
   </a>
 
 
@@ -38,6 +43,22 @@
         channelPublicId: '_xcLqmC' // 카카오톡 채널 홈 URL에 명시된 id로 설정합니다.
       });
     }
-   </script>
+
+  </script>
+
+  <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function () {
+      var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/5a8ae44dd7591465c707ccd5/default';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
+    })();
+  </script>
+  <!--End of Tawk.to Script-->
 </body>
+
 </html>
