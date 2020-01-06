@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Main</title>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+  <style>
+    a { margin: 10px;}
+  </style>
+</head>
+<body>
+  <h1>home</h1>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro quam nemo natus accusamus doloremque impedit, est voluptates quidem ipsum, libero atque maiores explicabo aperiam laboriosam assumenda at itaque. Dolorem, atque.</p>
+
+  <a href="#" onclick="setChildValue(0);return false;">sub-page</a>
+  <a href="#" onclick="setChildValue(1);return false;">sub-page</a>
+  <a href="#" onclick="setChildValue(2);return false;">sub-page</a>
+  <hr>
+  <a href="javascript:void chatChannel()">
+    <img src="https://developers.kakao.com/assets/img/about/logos/channel/consult_small_yellow_pc.png"/>
+  </a>
+
+
+  <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+  <script>
+    function setChildValue(index) {
+      // 페이지 이동
+      window.location.href = "subPage.html?index=" + index;
+      return false;
+    }
+
+
+    Kakao.init('2823aa19abb1878997680e99fd0f4072');
+    function chatChannel() {
+      Kakao.Channel.chat({
+        channelPublicId: '_xcLqmC' // 카카오톡 채널 홈 URL에 명시된 id로 설정합니다.
+      });
+    }
+   </script>
+</body>
+</html>
